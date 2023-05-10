@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="com.example.triviatastic.Question text goes here"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/answer_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_text_view"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/answer_option_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer option 1" />
+
+        <RadioButton
+            android:id="@+id/answer_option_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer option 2" />
+
+        <RadioButton
+            android:id="@+id/answer_option_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer option 3" />
+
+        <RadioButton
+            android:id="@+id/answer_option_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer option 4" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer_radio_group"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="127dp"
+        android:text="save" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/answer_radio_group"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="84dp"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/correct_answer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="316dp"
+        android:text="Correct answer: "
+
+        />
+</RelativeLayout>

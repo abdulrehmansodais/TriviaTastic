@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Welcome text view -->
+    <TextView
+        android:id="@+id/welcome_textview"
+        android:layout_width="299dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="112dp"
+        android:text="Welcome, "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Name edit text -->
+
+    <!-- Username edit text -->
+    <EditText
+        android:id="@+id/name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="87dp"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_edittext"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <!-- Email edit text -->
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_edittext"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <Button
+        android:id="@+id/Quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_edittext"
+        android:layout_marginTop="16dp"
+        android:text="Start Quiz"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="358dp"
+        android:text="Logout" />
+
+</RelativeLayout>
